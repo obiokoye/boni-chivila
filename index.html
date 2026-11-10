@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Boni-Chivila Global Services Limited | Construction, Roads & Solar – Abuja</title>
+<meta name="description" content="Boni-Chivila Global Services Limited (RC 2001940) is an Abuja-based company delivering road and bridge construction, civil engineering, building works, drainage and solar installations across Nigeria.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blue:#1f5fbf;--blue-dark:#123a78;--green:#2e9e3f;--ink:#14181f;--muted:#5b6472;
+  --bg:#ffffff;--soft:#f3f6fa;--laterite:#b5471f;--line:#e2e7ee;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:"Barlow Condensed",sans-serif;line-height:1.1;letter-spacing:.3px}
+
+/* Header */
+header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:4px solid var(--blue)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:74px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand svg{width:46px;height:46px}
+.brand b{display:block;font-family:"Barlow Condensed";font-size:24px;color:var(--blue);line-height:1}
+.brand small{display:block;font-size:11px;font-weight:600;letter-spacing:1.6px;color:var(--green)}
+nav ul{display:flex;gap:28px;list-style:none;font-weight:500;font-size:15px}
+nav a:hover{color:var(--blue)}
+.btn{display:inline-block;padding:13px 24px;border-radius:4px;font-weight:600;font-size:15px;transition:.2s}
+.btn-primary{background:var(--green);color:#fff}
+.btn-primary:hover{background:#25832f}
+.btn-ghost{border:2px solid #fff;color:#fff}
+.btn-ghost:hover{background:#fff;color:var(--ink)}
+.menu-btn{display:none;background:none;border:0;font-size:28px;cursor:pointer}
+
+/* Hero */
+.hero{position:relative;color:#fff;min-height:620px;display:flex;align-items:center;
+  background:linear-gradient(100deg,rgba(10,22,45,.92) 0%,rgba(10,22,45,.7) 45%,rgba(10,22,45,.25) 100%),
+  url("images/WhatsApp_Image_2026-11-10_at_11_24_15_AM_1.jpeg") center/cover, var(--laterite)}
+.hero-inner{max-width:640px;padding:80px 0}
+.tag{display:inline-block;background:var(--green);font-size:12px;font-weight:600;letter-spacing:2px;text-transform:uppercase;padding:6px 12px;margin-bottom:22px}
+.hero h1{font-size:clamp(42px,6vw,72px);margin-bottom:18px}
+.hero h1 span{color:#7fd38b}
+.hero p{font-size:18px;opacity:.92;margin-bottom:32px}
+.hero .actions{display:flex;gap:14px;flex-wrap:wrap}
+
+/* Stats strip */
+.strip{background:var(--blue-dark);color:#fff}
+.strip .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.strip div.item{padding:26px 20px;border-right:1px solid rgba(255,255,255,.12)}
+.strip div.item:last-child{border-right:0}
+.strip strong{display:block;font-family:"Barlow Condensed";font-size:30px}
+.strip span{font-size:13px;opacity:.8}
+
+section{padding:90px 0}
+.eyebrow{color:var(--green);font-weight:600;font-size:13px;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px}
+.sec-title{font-size:clamp(32px,4vw,46px);margin-bottom:16px}
+.lead{color:var(--muted);max-width:640px;font-size:17px}
+
+/* About */
+.about-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:60px;align-items:center}
+.about-img{position:relative;border-radius:6px;overflow:hidden;aspect-ratio:4/3;background:var(--laterite) url("images/WhatsApp_Image_2026-11-10_at_11_24_15_AM_2.jpeg") center/cover}
+.about-img .badge{position:absolute;left:0;bottom:0;background:var(--green);color:#fff;padding:18px 24px}
+.about-img .badge b{font-family:"Barlow Condensed";font-size:34px;display:block;line-height:1}
+.checks{list-style:none;margin-top:26px;display:grid;gap:12px}
+.checks li{padding-left:30px;position:relative}
+.checks li:before{content:"";position:absolute;left:0;top:6px;width:16px;height:16px;border-radius:50%;background:var(--green);
+  box-shadow:inset 0 0 0 4px #c9ecce}
+
+/* Services */
+.services{background:var(--soft)}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:46px}
+.svc{background:#fff;padding:32px 28px;border-top:4px solid var(--blue);border-radius:4px;transition:.25s}
+.svc:hover{transform:translateY(-4px);box-shadow:0 14px 30px rgba(18,58,120,.1);border-top-color:var(--green)}
+.svc .ico{width:50px;height:50px;border-radius:50%;background:#e6eefb;display:grid;place-items:center;margin-bottom:18px}
+.svc .ico svg{width:26px;height:26px;stroke:var(--blue);fill:none;stroke-width:2}
+.svc h3{font-size:24px;margin-bottom:8px}
+.svc p{color:var(--muted);font-size:15px}
+
+/* Projects */
+.gallery{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:240px 240px;gap:14px;margin-top:46px}
+.gallery figure{position:relative;overflow:hidden;border-radius:4px;background:var(--laterite) center/cover}
+.gallery figure:first-child{grid-row:span 2}
+.gallery figcaption{position:absolute;left:0;right:0;bottom:0;padding:40px 16px 14px;color:#fff;font-weight:600;font-size:14px;
+  background:linear-gradient(transparent,rgba(0,0,0,.75))}
+
+/* Why */
+.why{background:var(--blue-dark);color:#fff}
+.why .lead{color:rgba(255,255,255,.75)}
+.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;margin-top:46px}
+.why-grid div{border-left:3px solid var(--green);padding-left:18px}
+.why-grid h3{font-size:22px;margin-bottom:6px}
+.why-grid p{font-size:14px;opacity:.8}
+
+/* Contact */
+.contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:50px;margin-top:40px}
+.info-card{background:var(--soft);padding:34px;border-radius:6px}
+.info-row{display:flex;gap:14px;margin-bottom:22px}
+.info-row:last-child{margin-bottom:0}
+.info-row .i{flex:0 0 42px;height:42px;border-radius:50%;background:var(--blue);display:grid;place-items:center}
+.info-row .i svg{width:20px;height:20px;stroke:#fff;fill:none;stroke-width:2}
+.info-row small{display:block;color:var(--muted);font-size:13px}
+.info-row b{font-weight:600}
+form{display:grid;gap:14px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+input,select,textarea{width:100%;padding:14px;border:1px solid var(--line);border-radius:4px;font:inherit;font-size:15px}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--blue);border-color:transparent}
+textarea{min-height:130px;resize:vertical}
+form button{border:0;cursor:pointer}
+
+footer{background:#0b1220;color:rgba(255,255,255,.7);padding:46px 0 26px;font-size:14px}
+.foot{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;padding-bottom:24px;border-bottom:1px solid rgba(255,255,255,.1)}
+.foot .brand b{color:#fff}
+.copy{padding-top:20px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+
+.wa{position:fixed;right:20px;bottom:20px;width:58px;height:58px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 6px 18px rgba(0,0,0,.25);z-index:60}
+.wa svg{width:30px;height:30px;fill:#fff}
+
+@media(max-width:900px){
+  nav ul{display:none;position:absolute;top:78px;left:0;right:0;background:#fff;flex-direction:column;gap:0;border-bottom:1px solid var(--line)}
+  nav ul.open{display:flex}
+  nav ul li a{display:block;padding:14px 20px}
+  .menu-btn{display:block}
+  .nav .btn{display:none}
+  .about-grid,.contact-grid{grid-template-columns:1fr;gap:36px}
+  .svc-grid{grid-template-columns:1fr 1fr}
+  .why-grid{grid-template-columns:1fr 1fr}
+  .strip .wrap{grid-template-columns:1fr 1fr}
+  .gallery{grid-template-columns:1fr 1fr;grid-template-rows:auto}
+  .gallery figure{height:200px}
+  .gallery figure:first-child{grid-column:span 2;grid-row:auto;height:260px}
+}
+@media(max-width:560px){
+  section{padding:64px 0}
+  .svc-grid,.why-grid,.row2{grid-template-columns:1fr}
+  .hero{min-height:540px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#home" class="brand" aria-label="Boni-Chivila home">
+      <svg viewBox="0 0 100 100" aria-hidden="true">
+        <path d="M50 4a46 46 0 0 0-40 68C24 46 50 30 92 34A46 46 0 0 0 50 4z" fill="#1f5fbf"/>
+        <path d="M95 46c-30-4-58 14-70 42a46 46 0 0 0 70-42z" fill="#2e9e3f"/>
+        <path d="M30 80c8-18 26-32 54-36" stroke="#fff" stroke-width="3" stroke-dasharray="7 6" fill="none"/>
+      </svg>
+      <span><b>BONI-CHIVILA</b><small>GLOBAL SERVICES LIMITED</small></span>
+    </a>
+    <nav>
+      <button class="menu-btn" aria-label="Menu" onclick="document.getElementById('menu').classList.toggle('open')">☰</button>
+      <ul id="menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a href="#contact" class="btn btn-primary">Request a Quote</a>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <div class="wrap">
+    <div class="hero-inner">
+      <span class="tag">RC 2001940 · Abuja, Nigeria</span>
+      <h1>Building the Roads <span>Nigeria Moves On</span></h1>
+      <p>From road and bridge construction to housing estates and solar installations, Boni-Chivila Global Services Limited delivers durable infrastructure, on schedule.</p>
+      <div class="actions">
+        <a href="#contact" class="btn btn-primary">Start a Project</a>
+        <a href="#projects" class="btn btn-ghost">View Our Work</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="strip">
+  <div class="wrap">
+    <div class="item"><strong>2022</strong><span>Incorporated with CAC</span></div>
+    <div class="item"><strong>Roads</strong><span>Grading, laterite & drainage</span></div>
+    <div class="item"><strong>Building</strong><span>Estates, hostels & hotels</span></div>
+    <div class="item"><strong>Energy</strong><span>Solar & power systems</span></div>
+  </div>
+</div>
+
+<section id="about">
+  <div class="wrap about-grid">
+    <div class="about-img">
+      <div class="badge"><b>CAC</b>Registered under CAMA 2020</div>
+    </div>
+    <div>
+      <p class="eyebrow">Who we are</p>
+      <h2 class="sec-title">A Nigerian construction company built on delivery</h2>
+      <p class="lead">Boni-Chivila Global Services Limited is a private limited company incorporated in Nigeria in November 2022 under the Companies and Allied Matters Act. Headquartered in Garki, Abuja, we take on civil, building and energy projects for government agencies, private developers and communities.</p>
+      <ul class="checks">
+        <li>Owned and deployed heavy equipment: graders, loaders, excavators and tippers</li>
+        <li>Hands-on site supervision from earthworks to finishing</li>
+        <li>Fully registered, with stamp-duty-certified incorporation documents</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <p class="eyebrow">What we do</p>
+    <h2 class="sec-title">Our Services</h2>
+    <p class="lead">One contractor for the full life of your project: planning, design, construction, maintenance and supply.</p>
+    <div class="svc-grid">
+      <div class="svc"><div class="ico"><svg viewBox="0 0 24 24"><path d="M4 21 9 3M20 21 15 3M12 6v2M12 11v2M12 16v2"/></svg></div>
+        <h3>Roads & Bridges</h3><p>Road construction, rehabilitation and maintenance, including earthworks, grading, laterite and stone base, tarmac and bridges.</p></div>
+      <div class="svc"><div class="ico"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6"/></svg></div>
+        <h3>Building Construction</h3><p>Housing estates, hostels, hotels and commercial buildings, from foundation to finishing, plus alterations and repairs.</p></div>
+      <div class="svc"><div class="ico"><svg viewBox="0 0 24 24"><path d="M2 12h4l3 6 6-12 3 6h4"/></svg></div>
+        <h3>Civil Engineering</h3><p>Civil, mechanical and electrical works, drainage channels, culverts, warehouses, pipelines and site preparation.</p></div>
+      <div class="svc"><div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5 19 19M5 19l1.5-1.5M17.5 6.5 19 5"/></svg></div>
+        <h3>Solar & Renewable Energy</h3><p>Design, supply, installation and maintenance of solar electric systems, transformers and related power equipment.</p></div>
+      <div class="svc"><div class="ico"><svg viewBox="0 0 24 24"><path d="M3 7h18v13H3zM8 7V4h8v3"/></svg></div>
+        <h3>Procurement & Supplies</h3><p>General contracting and supply of construction materials, equipment, appliances and goods for public and private clients.</p></div>
+      <div class="svc"><div class="ico"><svg viewBox="0 0 24 24"><path d="M14 6l4 4-9 9H5v-4zM12 8l4 4"/></svg></div>
+        <h3>Maintenance & Demolition</h3><p>Planned maintenance of roads and structures, plus safe, controlled demolition and site clearing.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <p class="eyebrow">On site</p>
+    <h2 class="sec-title">Recent Work</h2>
+    <p class="lead">A look at our teams and equipment in the field: grading, laterite filling, drainage and base course work.</p>
+    <div class="gallery">
+      <figure style="background-image:url('images/WhatsApp_Image_2026-11-10_at_11_24_15_AM_1.jpeg')"><figcaption>Laterite filling & road grading</figcaption></figure>
+      <figure style="background-image:url('images/WhatsApp_Image_2026-11-10_at_11_24_15_AM_2.jpeg')"><figcaption>Drainage channel & road base</figcaption></figure>
+      <figure style="background-image:url('images/WhatsApp_Image_2026-11-10_at_11_24_15_AM_3.jpeg')"><figcaption>Stone base course with grader</figcaption></figure>
+      <figure style="background-image:url('images/WhatsApp_Image_2026-11-10_at_11_24_15_AM.jpeg')"><figcaption>Earthworks & formation level</figcaption></figure>
+      <figure style="background-image:url('images/WhatsApp_Image_2026-11-10_at_11_24_16_AM.jpeg')"><figcaption>Excavation & site preparation</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="why">
+  <div class="wrap">
+    <p class="eyebrow">Why Boni-Chivila</p>
+    <h2 class="sec-title">Built to last. Delivered on time.</h2>
+    <p class="lead">We keep projects simple for our clients: clear costs, steady progress and work that stands up to the weather.</p>
+    <div class="why-grid">
+      <div><h3>Own Equipment</h3><p>Graders, wheel loaders, excavators and tippers ready for mobilisation.</p></div>
+      <div><h3>Quality Materials</h3><p>Properly compacted laterite and stone base for roads that hold.</p></div>
+      <div><h3>Fully Registered</h3><p>CAC-incorporated private limited company, RC 2001940.</p></div>
+      <div><h3>One Contractor</h3><p>Roads, buildings, power and supplies handled by a single team.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <p class="eyebrow">Get in touch</p>
+    <h2 class="sec-title">Let's discuss your project</h2>
+    <p class="lead">Tell us what you need built and we'll get back to you with next steps.</p>
+    <div class="contact-grid">
+      <div class="info-card">
+        <div class="info-row"><div class="i"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
+          <div><small>Office</small><b>Suite B13, First Floor, Efab Mall, Area 11, Garki, FCT Abuja</b></div></div>
+        <div class="info-row"><div class="i"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-3 2a11 11 0 0 0 5 5l2-3 5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></div>
+          <div><small>Phone / WhatsApp</small><b><a href="tel:+2348037109084">+234 803 710 9084</a></b></div></div>
+        <div class="info-row"><div class="i"><svg viewBox="0 0 24 24"><path d="M3 6h18v12H3zM3 6l9 7 9-7"/></svg></div>
+          <div><small>Email</small><b><a href="mailto:chidinwa21@gmail.com">chidinwa21@gmail.com</a></b></div></div>
+      </div>
+      <form id="quote" onsubmit="return sendQuote(event)">
+        <div class="row2">
+          <input id="name" placeholder="Your name" required>
+          <input id="phone" placeholder="Phone number" required>
+        </div>
+        <select id="service">
+          <option>Roads & Bridges</option>
+          <option>Building Construction</option>
+          <option>Civil Engineering</option>
+          <option>Solar & Renewable Energy</option>
+          <option>Procurement & Supplies</option>
+          <option>Other</option>
+        </select>
+        <textarea id="msg" placeholder="Project location and details" required></textarea>
+        <button class="btn btn-primary" type="submit">Send via WhatsApp</button>
+        <small style="color:var(--muted)">Prefer email? Write to chidinwa21@gmail.com</small>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div class="brand"><span><b>BONI-CHIVILA</b><small>GLOBAL SERVICES LIMITED</small></span></div>
+      <div>Construction of Roads & Bridges · Housing Estates · Hostels · Hotels<br>Solar Installation · Civil Engineering · Procurement</div>
+    </div>
+    <div class="copy">
+      <span>© <span id="yr"></span> Boni-Chivila Global Services Limited. RC 2001940.</span>
+      <span>Garki, Abuja, Nigeria</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/2348037109084" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 32 32"><path d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.6a10.6 10.6 0 0 1-5.4-1.5l-.4-.2-3.9 1 1-3.8-.2-.4A10.6 10.6 0 1 1 16 26.6zm5.8-7.9c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7 0a8.7 8.7 0 0 1-4.3-3.8c-.3-.6.3-.5.9-1.7.1-.2 0-.4 0-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.6 3.6 0 0 0-1.1 2.7 6.3 6.3 0 0 0 1.3 3.3 14.4 14.4 0 0 0 5.5 4.9c2 .9 2.8.9 3.8.8a3.3 3.3 0 0 0 2.2-1.5 2.7 2.7 0 0 0 .2-1.5c-.1-.2-.3-.3-.6-.4z"/></svg>
+</a>
+
+<script>
+document.getElementById('yr').textContent = new Date().getFullYear();
+document.querySelectorAll('#menu a').forEach(a => a.addEventListener('click', () => document.getElementById('menu').classList.remove('open')));
+function sendQuote(e){
+  e.preventDefault();
+  const v = id => document.getElementById(id).value.trim();
+  const text = `Hello Boni-Chivila,%0A%0AName: ${encodeURIComponent(v('name'))}%0APhone: ${encodeURIComponent(v('phone'))}%0AService: ${encodeURIComponent(v('service'))}%0A%0A${encodeURIComponent(v('msg'))}`;
+  window.open('https://wa.me/2348037109084?text=' + text, '_blank');
+  return false;
+}
+</script>
+</body>
+</html>
